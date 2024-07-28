@@ -8,7 +8,7 @@ def create_database():
         connection = mysql.connector.connect(
             host ='localhost',  # MySQL server host 
             user ='root',  # MySQL username
-            password='Franklinakinopeoluwa@2020'  # MySQL password
+            password='Franklinakinopeoluwa@2020'  # Replace with your MySQL password
         )
 
         if connection.is_connected():
@@ -17,7 +17,7 @@ def create_database():
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
 
-    except Error as e:
+    except mysql.connector.Error as e:
         print(f"Error: {e}")
 
     finally:
