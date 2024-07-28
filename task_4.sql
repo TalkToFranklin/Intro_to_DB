@@ -5,6 +5,8 @@ USE alx_book_store;
 SELECT 
     TABLE_NAME,
     COLUMN_NAME,
+    COLUMN_TYPE, 
+    TABLE_SCHEMA = 'alx_book_store'
     DATA_TYPE,
     CHARACTER_MAXIMUM_LENGTH,
     IS_NULLABLE,
